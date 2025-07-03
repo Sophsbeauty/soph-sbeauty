@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffdfc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: linear-gradient(90deg, #e91e63, #ffc107, #00bcd4, #4caf50);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- HERO (ACCUEIL) ---------- */
+.hero img {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+  border-bottom: 6px solid #e91e63;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 2.2rem;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+/* ---------- À PROPOS ---------- */
+.apropos p {
+  max-width: 900px;
+  margin: 0 auto 15px;
+  font-size: 1.1rem;
+}
+
+/* ---------- SERVICES ---------- */
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.service {
+  background: linear-gradient(135deg, #ffebf0, #fffde7);
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+  min-width: 250px;
+  transition: 0.3s;
+}
+.service:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #f8bbd0, #f0f4c3);
+}
+
+/* ---------- GALERIE ---------- */
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  max-width: 1100px;
+  margin: auto;
+}
+.galerie-grid img,
+.galerie-grid video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+/* ---------- CONTACT ---------- */
+.contact p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+.contact a {
+  color: #00bcd4;
+  font-weight: bold;
+  text-decoration: none;
+}
+form {
+  max-width: 400px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+button {
+  background: #e91e63;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #c2185b;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.image-redim {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
